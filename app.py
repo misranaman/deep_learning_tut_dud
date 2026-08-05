@@ -2,10 +2,10 @@ import pickle
 
 import numpy as np
 import streamlit as st
-from keras.src.legacy.preprocessing.text import Tokenizer
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.python.keras import Sequential
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 model: Sequential = load_model("next_word_model.h5")
 
